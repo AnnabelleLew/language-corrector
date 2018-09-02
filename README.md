@@ -26,4 +26,4 @@ print(language_corrector.grammar_checker.basic_grammar_check(text))
 ## How to install:
 Download as a .zip file and unzip. Then, in command line, navigate to inside the language correction folder, then run:
 
-`python setup.py develop`
+`python setup.py install`
