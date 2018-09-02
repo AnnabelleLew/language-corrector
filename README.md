@@ -16,6 +16,8 @@ text = "Text to check grammar for."
 print(language_corrector.grammar_checker.basic_grammar_check(text))
 ```
 
+Make sure that GOOGLE_APPLICATION_CREDENTIALS is set to a file called key.json!
+
 ## Methods available:
 - `basic_grammar_check()`: returns feedback based on the grammar check
 - `long_suggestion_grammar_check()`: returns a list of each suggestion
