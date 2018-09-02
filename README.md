@@ -5,7 +5,7 @@ Contains methods used for language correction. It's in python. You need to have 
 
 in command line to install the language check library that supports this library.
 
-NOTE: language-check is dependent on languagetool being downloaded. Please download from https://languagetool.org/!
+NOTE: language-check is dependent on languagetool being downloaded. Please download the desktop version from https://languagetool.org/, and unzip! (This may take around half an hour.)
 
 ## How to use:
 Here's the easiest way to use it. See as follows:
