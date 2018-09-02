@@ -23,6 +23,10 @@ print(language_corrector.grammar_checker.basic_grammar_check(text))
 - `recommended_correction()`: returns a recommended correction
 - `suggestion_dictionaries()`: returns a list of each suggestion, with dictionary values associated with the suggestion instead of a string.
 
+# Translation methods available:
+- `main.return_english()`: returns a grammar check in English
+- `main.return_translation()`: returns a grammar check in a requested language
+
 ## How to install:
 Download as a .zip file and unzip. Then, in command line, navigate to inside the language correction folder, then run:
 
