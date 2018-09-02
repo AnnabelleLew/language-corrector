@@ -3,7 +3,7 @@ Contains methods used for language correction. It's in python. You need to have 
 
 `pip install --upgrade language-check`
 
-in command line to install the language check library that supports this library.
+in command line to install the language check library that supports this library. (This should take a few minutes.)
 
 NOTE: language-check is dependent on languagetool being downloaded. Please download the desktop version from https://languagetool.org/, and unzip! (This may take around half an hour.)
 
