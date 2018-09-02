@@ -1,6 +1,10 @@
+MANIFEST.in
+README.md
 setup.py
 language_corrector/__init__.py
 language_corrector/grammar_checker.py
+language_corrector/key.json
+language_corrector/main.py
 language_corrector.egg-info/PKG-INFO
 language_corrector.egg-info/SOURCES.txt
 language_corrector.egg-info/dependency_links.txt
