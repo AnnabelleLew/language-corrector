@@ -48,6 +48,5 @@ def return_translation(text, target='fr'):
     translated_grammar = translate.Client()
     translated_grammar = translated_grammar.translate(english_grammar, target_language=target)
     output = u"Text: {}".format(text)
-    output += u"\nRecommended Grammar: {}".format(english_grammar)
-    output += u"\nRecommended Grammar Translation: {}".format(translated_grammar['translatedText'])
+    output += u"\nTranslation: {}".format(translated_grammar['translatedText'])
     return output
