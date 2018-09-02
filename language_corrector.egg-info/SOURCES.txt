@@ -1,0 +1,7 @@
+setup.py
+language_corrector/__init__.py
+language_corrector/grammar_checker.py
+language_corrector.egg-info/PKG-INFO
+language_corrector.egg-info/SOURCES.txt
+language_corrector.egg-info/dependency_links.txt
+language_corrector.egg-info/top_level.txt
