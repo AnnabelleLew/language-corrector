@@ -86,3 +86,36 @@ def recommended_correction(text):
     matches = tool.check(text)
     correction = language_check.correct(text, matches)
     return correction
+
+def suggestion_dictionaries(text):
+    """
+    This method returns the dictionaries associated with each correction
+    suggeseted by the grammar check.
+
+    Parameters
+    ----------
+        text : str
+            The text that is inputted. Should be unformatted.
+
+    Returns
+    -------
+        list of dicts
+            Returns a list of dictionaries, with the following properties:
+                fromx : int
+                    The horizontal location of the mistake. Starts at 0.
+                fromy : int
+                    The vertical location of the mistake. Starts at 0.
+                ruleId : str
+                    The ID of the rule associated with the mistake.
+                replacement : list of str
+                    A list of suggested replacements for the mistake.
+    """
+    tool = language_check.LanguageTool('en-US')
+    matches = tool.check(text)
+    for i, match in enumerate(matches):
+        fromy = match.fromy
+        fromx = match.fromx
+        ruleId = match.ruleId
+        replacements = match.replacements
+        matches[i] = {"fromx": fromx, "fromy": fromy, "ruleId": ruleId, "replacements": replacements}
+    return matches
